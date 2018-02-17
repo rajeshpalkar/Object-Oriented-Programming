@@ -110,7 +110,6 @@ string Queue::dequeueAny()
     else{
         oldestAnimal = back->data;
         back = back->prev;
-        back->next = nullptr;
     }
     
     return oldestAnimal;
